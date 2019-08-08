@@ -3,8 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <button id="measured" type="button" name="measured" onclick="measuredData()">Click for Measured data</button>
+    <button id="recorded" type="button" name="button" onclick="reportedData()">Click for recorded data</button>
 
+    <div class="container">
+      <div id="map"></div>
+      <div class="row">
+        <div class="col">
+
+          <ul id="reportedDataList">
+
+          </ul>
+        </div>
+        <div class="col">
+          <ul id="measuredDataList">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy0Jvevy0289aKOoqn9YZJk_ce92YP8lM&libraries=places" type="text/javascript"></script>
+    <script src="node_modules\jquery\dist\jquery.min.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
